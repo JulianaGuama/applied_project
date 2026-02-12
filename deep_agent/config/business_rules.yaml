@@ -1,0 +1,36 @@
+# Business rules used by the Deep Agent.
+# Replace these values with your official governance rules.
+
+metadata:
+  owner: "data-strategy-team"
+  version: "0.1.0"
+  description: "Baseline rules for customer issue detection and business relevance validation."
+
+analysis_rules:
+  # If churn risk exceeds this threshold, the customer is marked as high-risk.
+  churn_risk_high_threshold: 0.65
+
+  # If monthly support tickets are above this threshold, support overload issue is raised.
+  support_tickets_high_threshold: 8
+
+  # If payment delay days exceed this threshold, collections risk issue is raised.
+  payment_delay_high_threshold: 20
+
+  # If product adoption score is below this threshold, adoption issue is raised.
+  product_adoption_low_threshold: 0.45
+
+  # Minimum absolute correlation to report a relation as meaningful.
+  meaningful_correlation_threshold: 0.35
+
+business_validation:
+  # Minimum confidence accepted to consider a finding relevant.
+  relevance_confidence_min: 0.70
+
+  # Findings without measurable impact are rejected by validator.
+  require_measurable_impact: true
+
+  # Strategic dimensions that should be covered in final recommendations.
+  required_dimensions:
+    - revenue
+    - customer_experience
+    - operational_efficiency
