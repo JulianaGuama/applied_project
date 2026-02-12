@@ -1,0 +1,45 @@
+# Fake dataset for development and architecture validation.
+# Replace with real records while keeping this schema.
+
+dataset_name: "fake_customer_health"
+period: "2026-Q1"
+records:
+  - customer_id: "CUST-001"
+    segment: "enterprise"
+    monthly_revenue_usd: 18000
+    churn_risk_score: 0.72
+    support_tickets_last_30d: 12
+    avg_payment_delay_days: 4
+    product_adoption_score: 0.39
+
+  - customer_id: "CUST-002"
+    segment: "mid_market"
+    monthly_revenue_usd: 6500
+    churn_risk_score: 0.41
+    support_tickets_last_30d: 4
+    avg_payment_delay_days: 33
+    product_adoption_score: 0.61
+
+  - customer_id: "CUST-003"
+    segment: "enterprise"
+    monthly_revenue_usd: 27000
+    churn_risk_score: 0.81
+    support_tickets_last_30d: 10
+    avg_payment_delay_days: 27
+    product_adoption_score: 0.30
+
+  - customer_id: "CUST-004"
+    segment: "smb"
+    monthly_revenue_usd: 1800
+    churn_risk_score: 0.23
+    support_tickets_last_30d: 2
+    avg_payment_delay_days: 5
+    product_adoption_score: 0.78
+
+  - customer_id: "CUST-005"
+    segment: "mid_market"
+    monthly_revenue_usd: 9200
+    churn_risk_score: 0.66
+    support_tickets_last_30d: 9
+    avg_payment_delay_days: 18
+    product_adoption_score: 0.43

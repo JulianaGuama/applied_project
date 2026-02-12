@@ -1,0 +1,47 @@
+# Product and solution catalog used by recommender agent.
+# Replace with your real portfolio names and value propositions.
+
+products:
+  - id: "prod_observability"
+    name: "Customer Health Observability"
+    target_issues:
+      - "high_churn_risk"
+      - "low_product_adoption"
+    value_proposition: "Provides proactive monitoring and alerts for customer health signals."
+
+  - id: "prod_support_automation"
+    name: "Support Workflow Automation"
+    target_issues:
+      - "support_overload"
+    value_proposition: "Reduces support response time with triage automation and self-service flows."
+
+  - id: "prod_collections_ai"
+    name: "Collections Prioritization AI"
+    target_issues:
+      - "payment_delay_risk"
+    value_proposition: "Prioritizes collection actions and reduces overdue balances."
+
+solutions:
+  - id: "sol_onboarding_acceleration"
+    name: "Onboarding Acceleration Program"
+    supports_products:
+      - "prod_observability"
+    expected_outcomes:
+      - "Increase adoption score"
+      - "Reduce early churn probability"
+
+  - id: "sol_support_shift_left"
+    name: "Support Shift-Left Blueprint"
+    supports_products:
+      - "prod_support_automation"
+    expected_outcomes:
+      - "Reduce support ticket backlog"
+      - "Improve first response SLA"
+
+  - id: "sol_payment_recovery"
+    name: "Payment Recovery Journey"
+    supports_products:
+      - "prod_collections_ai"
+    expected_outcomes:
+      - "Lower average delay days"
+      - "Improve recovery rate"
