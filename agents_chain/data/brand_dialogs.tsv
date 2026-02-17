@@ -1,0 +1,4 @@
+brand_id	brand_name	website_url	industry	period	total_customers	affected_customers	csat	first_response_minutes	resolution_rate	escalation_rate	dialogue_sample
+BR001	Acme ERP	https://example.com	SaaS B2B	2026-01	1200	310	68	9.2	0.62	0.27	"Cliente: Meu chamado está aberto há 3 dias e ninguém retornou. Marca: Estamos com fila alta, vamos responder em breve. Cliente: Já perdi prazo com meu cliente final."
+BR002	LogiChain	https://example.org	Logística	2026-01	890	40	82	4.1	0.84	0.12	"Cliente: Preciso rastrear uma entrega. Marca: Segue código e previsão. Cliente: Obrigado, resolvido."
+BR003	FinCore	https://example.net	Fintech B2B	2026-01	650	170	71	7.8	0.69	0.22	"Cliente: Não consigo emitir boleto no portal. Marca: Recomendamos limpar cache. Cliente: Não funcionou e o vencimento é hoje."

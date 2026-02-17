@@ -1,0 +1,17 @@
+metrics:
+  csat:
+    description: "Customer Satisfaction Score médio (0 a 100)"
+    threshold_min: 75
+  first_response_minutes:
+    description: "Tempo médio da primeira resposta (minutos)"
+    threshold_max: 6
+  resolution_rate:
+    description: "Taxa de resolução no primeiro contato (0 a 1)"
+    threshold_min: 0.78
+  escalation_rate:
+    description: "Taxa de escalonamento para humano (0 a 1)"
+    threshold_max: 0.18
+
+logic:
+  rule: "Existe problema quando uma ou mais métricas ultrapassam os limites definidos."
+  no_action_message: "sem ação mapeada"
