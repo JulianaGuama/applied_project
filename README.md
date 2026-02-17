@@ -1,13 +1,21 @@
-# Projeto Aplicado
-Projeto Aplicado IGTI para MBA de Machine Learning.
+# applied_project
 
-# Setup
-Para reproduzir este experimento, siga os passos:
-* prepare o seu ambiente garantindo que o `requirements.txt` seja instalado: `pip install -r requirements.txt`
-* rode o arquivo `explore.py` que irá gerar o file `books.csv`
-* faça [upload do 'books.csv'](https://docs.databricks.com/data/data.html) no databricks
-* faça o [upload do 'MBA projeto aplicado.ipynb'](https://docs.databricks.com/data/data.html) no databricks
-* Substitua o cmd6 `df = spark.read.format("csv").option("delimiter", ";").option("header", True).load("dbfs:/FileStore/shared_uploads/juliana.guama@gmail.com/books-1.csv")` pela importação de arquivo sugerida pela API do databricks quando você subiu o `books.csv`.
+Este repositório agora está organizado como um **multi-projeto**:
 
+- `deep_agents/`: projeto original, preservado com a estrutura antiga.
+- `agents_chain/`: novo projeto com pipeline de agentes para análise de qualidade de diálogos entre customers e brands.
 
+## Projetos
 
+### 1) deep_agents
+Projeto legado movido integralmente para esta pasta.
+
+### 2) agents_chain
+Projeto novo em Python + LangChain + OpenAI para:
+- ler dataset em CSV com separador `\t`;
+- avaliar se há problema com base em métricas e limiares;
+- quando houver problema, identificar causa raiz;
+- medir impacto de negócio;
+- recomendar melhorias com base no catálogo de serviços.
+
+Consulte `agents_chain/README.md` para instruções completas.

@@ -1,0 +1,6 @@
+service_id	service_name	category	description	business_goal
+S001	Roteamento Inteligente	Eficiência	Direciona tickets para squads especializados com base em intenção e urgência.	reducao_custo
+S002	Playbook de Respostas	Qualidade	Padroniza respostas para reduzir ambiguidades e retrabalho.	fidelizacao
+S003	Auto-resolução com Base de Conhecimento	Automação	Sugere soluções de self-service antes de escalar para humano.	reducao_custo
+S004	Upsell Journey Assistant	Receita	Identifica momentos de oferta consultiva no diálogo.	aumento_receita
+S005	Monitor de SLA em Tempo Real	Operações	Dispara alertas quando KPIs críticos entram em risco.	fidelizacao
